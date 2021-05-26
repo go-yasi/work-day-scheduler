@@ -25,6 +25,7 @@ body {
     white-space: pre-wrap;
   }
   
+  /* Styles for save button */
   .time-block {
     text-align: center;
     border-radius: 15px;
