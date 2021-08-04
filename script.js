@@ -29,7 +29,7 @@ if (currentTime < 9) {
     }
 }
 
-// save activity info
+// save activity info to local storage
 var saveBtn = $(".saveBtn");
 
 saveBtn.on("click", function() {
@@ -37,3 +37,19 @@ saveBtn.on("click", function() {
     var hour = $(this).parent().attr("id");
     localStorage.setItem(activity, hour);
 });
+
+
+// show saved activities
+function displayActivities(){
+    $("#9am .activity").val(localStorage.getItem("9am"))
+    $("#10am .activity").val(localStorage.getItem("10am"))
+    $("#11am .activity").val(localStorage.getItem("11am"))
+    $("#12pm .activity").val(localStorage.getItem("12pm"))
+    $("#1pm .activity").val(localStorage.getItem("1pm"))
+    $("#2pm .activity").val(localStorage.getItem("2pm"))
+    $("#3pm .activity").val(localStorage.getItem("3pm"))
+    $("#4pm .activity").val(localStorage.getItem("4pm"))
+    $("#5pm .activity").val(localStorage.getItem("5pm"))   
+};
+
+displayActivities();
