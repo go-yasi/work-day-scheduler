@@ -6,7 +6,7 @@ The goal of this assignment was to modify starter code to create a simple calend
 * HTML
 * CSS
 * jQuery
-* Moment
+* Moment JS
 
 
 ## User Story
@@ -36,9 +36,8 @@ THEN the saved events persist
 ```
 
 ## Usage
-Link to deployed application: 
+[Here](https://go-yasi.github.io/work-day-scheduler/) is the link to the deployed application.  
 
-Below is the screenshot of the application:
-![screenshot of final page]()
+Below is the GIF demonstrating the functionality of the application:  
+![GIF animation demonstrating the funcitonality of the Workday Scheduler application](./work-day-scheduler.gif)
 
-## Conclusion
