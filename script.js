@@ -33,9 +33,9 @@ if (currentTime < 9) {
 var saveBtn = $(".saveBtn");
 
 saveBtn.on("click", function() {
-    var activity = $(this).siblings(".activity").val();
     var hour = $(this).parent().attr("id");
-    localStorage.setItem(activity, hour);
+    var activity = $(this).siblings(".activity").val();
+    localStorage.setItem(hour, activity);
 });
 
 
