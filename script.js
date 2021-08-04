@@ -1,5 +1,5 @@
 var currentDay = moment();
-var currentTime = moment().format("h");
+var currentTime = moment().format("H");
 $("#currentDay").text(currentDay.format("dddd, MMMM Do, YYYY"));
 
 var plannerDiv = $(".container");
@@ -25,9 +25,13 @@ var plannerDiv = $(".container");
 //     }
 // };
 
-if (hour < 9) {
+if (currentTime < 9) {
     for(var i = 0; i < plannerDiv.children().length; i++){
         plannerDiv.children().eq(i).children().eq(1).addClass('future');
+    }
+} else if (currentTime > 17) {
+    for(var i = 0; i < plannerDiv.children().length; i++){
+        plannerDiv.children().eq(i).children().eq(1).addClass('past');
     }
 }
 
