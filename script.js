@@ -1,9 +1,8 @@
 var currentDay = moment();
-$("#currentDay").text(currentDay.format("dddd, MMMM Do"));
+var hour = today.format('H');
+$("#currentDay").text(currentDay.format("dddd, MMMM Do, YYYY"));
 
-console.log(currentDay);
-
-// var plannerDiv = $(".container");
+var plannerDiv = $(".container");
 // var plannerRow = $("<div>");
 // var hour = $("<div>");
 // var activity = $("<div>");
