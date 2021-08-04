@@ -33,6 +33,16 @@ if (currentTime < 9) {
     for(var i = 0; i < plannerDiv.children().length; i++){
         plannerDiv.children().eq(i).children().eq(1).addClass('past');
     }
+} else {
+    for(var i = 0; i < plannerDiv.children().length; i++){
+        if (currentTime - 9 > i) {
+            plannerDiv.children().eq(i).children().eq(1).addClass('past');
+        } else if (currentTime - 9 == i) {
+            plannerDiv.children().eq(i).children().eq(1).addClass('present');
+        } else {
+            plannerDiv.children().eq(i).children().eq(1).addClass('future');
+        }
+    }
 }
 
 // using jquery this to target what we need from each div and comparing it to moment
