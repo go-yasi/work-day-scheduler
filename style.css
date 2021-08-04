@@ -74,3 +74,10 @@ textarea {
 .activity {
   flex: 1;
 }
+
+.hour {
+  flex: 0 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
