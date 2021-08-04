@@ -1,20 +1,18 @@
 # Work Day Scheduler
 ## Description
-The goal of this assignment was to modify starter code to create a simple calendar application that allows a user to save events for each hour of the day. 
+The goal of this assignment was to modify starter code to create a simple calendar application that allows a user to save events for each hour of the day. The application uses local storage to save and display the activities added to the planner, and [Moment JS](https://momentjs.com/) to display the current date and time. 
 
 ## Technologies Used
 * HTML
 * CSS
 * jQuery
-* Moment JS
+* [Moment JS](https://momentjs.com/)
 
 
 ## User Story
 
 ```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
+"As an employee with a busy schedule, I want to add important events to a daily planner so that I can manage my time effectively."
 ```
 
 ## Acceptance Criteria
