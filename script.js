@@ -1,5 +1,5 @@
 var currentDay = moment();
-var hour = today.format('H');
+var currentTime = moment().format("h");
 $("#currentDay").text(currentDay.format("dddd, MMMM Do, YYYY"));
 
 var plannerDiv = $(".container");
@@ -15,15 +15,21 @@ var plannerDiv = $(".container");
 // plannerDiv.append(plannerRow);
 
 // identify the current time so I can add the .present class to the current hour row
-var currentTime = moment().format("h");
-console.log(currentTime);
+
+
 
 // if currentTime =  id add class .present
-for (var i = 9; i < 18; i++) {
-    if (currentTime === i) {
-        $(".hour").addClass(".present");
+// for (var i = 9; i < 18; i++) {
+//     if (currentTime === i) {
+//         $(".hour").addClass(".present");
+//     }
+// };
+
+if (hour < 9) {
+    for(var i = 0; i < plannerDiv.children().length; i++){
+        plannerDiv.children().eq(i).children().eq(1).addClass('future');
     }
-};
+}
 
 // using jquery this to target what we need from each div and comparing it to moment
 // if you need to add future class remember to remove present class
